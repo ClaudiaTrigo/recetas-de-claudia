@@ -1,0 +1,94 @@
+@use '_variables' as v;
+
+// Fem que el body ocupi tota la pantalla i no deixi fer scroll
+body.portada {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/src/assets/fondo-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    header {
+        padding: 2rem;
+        background-color: transparent;
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: v.$color-primari;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: v.$color-links;
+                }
+            }
+        }
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+
+        img {
+            max-width: 400px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: v.$font-principal;
+            font-size: 4rem;
+            color: v.$color-primari;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: v.$color-secundari;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        nav ul {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            padding: 40px;
+
+            img {
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+                ;
+            }
+        }
+    }
+
+}
