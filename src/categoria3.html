@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptes Claudia - Formulari</title>
+    <meta name="author" content="Claudia Trigo">
+    <meta name="description" content="Pàgina de formulari">
+    <link rel="stylesheet" href="scss/style.scss">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/src/index.html">
+                <img src="/src/assets/logo-clar.png" alt="Enllaç que et porta a la pàgina principal">
+            </a>
+            <ul>
+                <li>
+                    <a href="/src/categoria.html">Receptes</a>
+                </li>
+                <li>
+                    <a href="/src/categoria2.html">Postres</a>
+                </li>
+                <li>
+                    <a href="/src/categoria3.html" class="active">Formulari de propostes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/send-info" method="post">
+            <p>Si voleu enviar algun suggeriment de recepta, completeu els següents camps:</p>
+            <fieldset>
+                <legend>Informació de contacte:</legend>
+                <div>
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" placeholder="ex: Marta, Marc, ...">
+                    </div>
+                    <div>
+                        <label for="email">Adreça electrònica</label>
+                        <input type="email" id="email" placeholder="ex: example@example.com">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Descripció de la recepta:</legend>
+
+                <div>
+                    <div>
+                        <label for="tipus-recepta">Tripus de recepta</label>
+                        <select id="tipus-recepta" name="tipus-recepta">
+                            <option value="recepta">Recepta</option>
+                            <option value="postre">Postre</option>
+                            <option value="indefinit" selected>  </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="descripcio">Descripció</label>
+                        <textarea name="descripcio" id="descripcio"
+                            placeholder="En aquest espai, descriu breument la recepta i/o el motiu de la proposta."></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Subscripció</legend>
+                <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                <label for="newsletter">Vull rebre el butlletí setmanal amb noves receptes.</label>
+            </fieldset>
+
+            <div class="butons-form">
+                <button type="submit">Enviar suggeriment</button>
+                <button type="reset">Netejar formulari</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p><abbr title="Universitat Oberta de Catalunya">UOC</abbr> Abril de 2025. Claudia Trigo Joaquin</p>
+    </footer>
+</body>
+
+</html>

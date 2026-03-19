@@ -38,6 +38,13 @@ header {
         color: v.$color-links;
     }
 
+    .active {
+        color: v.$color-links;
+        font-weight: 900;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+
     @media (max-width: 768px) {
 
         nav {
