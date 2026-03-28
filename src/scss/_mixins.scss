@@ -1,0 +1,56 @@
+@use '_variables' as v;
+
+@mixin contenidor-base {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@mixin titol-seccio {
+    color: v.$color-primari;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 60px;
+        height: 4px;
+        background-color: v.$color-links;
+        border-radius: 2px;
+    }
+}
+
+@mixin header-presentacio {
+    box-shadow: none;
+    border: none;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+    h1 {
+        color: v.$color-primari;
+        font-size: 2.5rem;
+        margin: 0;
+        line-height: 1.2;
+        font-family: v.$font-principal;
+    }
+}
+
+@mixin bloc-seccio-blanca {
+    background-color: v.$color-secc-det;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(v.$color-footer, 0.08);
+    border: 1px solid rgba(v.$color-primari, 0.08);
+}
