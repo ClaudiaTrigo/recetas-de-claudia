@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptes Claudia - Escudella</title>
+    <meta name="author" content="Claudia Trigo">
+    <meta name="description" content="Pàgina de detall: Escudella">
+    <link rel="stylesheet" href="scss/style.scss">
+</head>
+
+<body>
+    <!-- Enllaç d'accessibilitat per a lectors de pantalla -->
+    <a href="#main-content" class="skip-link">Saltar al contingut principal</a>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="assets/logo-clar.png" alt="Enllaç que et porta a la pàgina principal">
+            </a>
+            <ul>
+                <li>
+                    <a href="categoria.html" class="active">Receptes</a>
+                </li>
+                <li>
+                    <a href="categoria2.html">Postres</a>
+                </li>
+                <li>
+                    <a href="categoria3.html">Formulari de propostes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="container-det">
+            <section class="presentation">
+                <a href="categoria.html" class="button-link">
+                    Tornar a l'index de receptes
+                </a>
+
+                <h1>Escudella</h1>
+
+                <p>Poques elaboracions expressen millor l’esperit del xup-xup que l’escudella: un guisat lent, profund i generós, on el brou recull l’ànima de la carn, la verdura i els llegums per convertir-se en pura cuina de la llar, i amb un significat especial per Nadal.</p>
+                
+                <p>El testimoni més antic d’elaboracions que es poden considerar antecedents directes de l’escudella apareix al segle XIV, al Llibre de Sent Soví (c. 1320-1330), i, tot i que encara no es fa servir la paraula escudella com a nom del plat, descriu diferents preparacions d’olles caldoses amb carn, hortalisses i arròs o pasta que constitueixen la base històrica de l’escudella catalana. </p>
+
+                <p>L’escudella també va ser, durant segles, un plat d’elaboració pagesa: es posava a l’olla quan es marxava al matí a treballar i anava fent xup-xup durant hores i hores. Al segle XIV, Francesc Eiximenis afirmava que els catalans en menjaven cada dia de la seva vida. Això sí, la pilota, aquesta mena de mandonguilla amb esteroides que és una dels senyals d’identitat d’aquesta sopa llaminera i enriquida, solia estar feta amb carn de porc i pa. Avui, és de carn picada, perquè en alguna cosa hem millorat, fins i tot les classes humils.</p>
+
+                <p>Després d’aquest breu repàs de la història mastegada, espero haver-vos despertat les ganes de fer escudella. </p>
+
+                <!-- Ús de la dependència externa Lucide -->
+                <div class="recipe-meta"
+                    style="display: flex; gap: 20px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
+                    <span style="display: flex; align-items: center; gap: 5px;">
+                        <i data-lucide="clock" style="width: 18px;"></i> 4 hores (aprox.)
+                    </span>
+                    <span style="display: flex; align-items: center; gap: 5px;">
+                        <i data-lucide="users" style="width: 18px;"></i> Indefinit
+                    </span>
+                </div>
+            </section>
+
+            <section class="ingr">
+                <h2>Ingredients:</h2>
+
+                <div class="ingr-container">
+                    <ul>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 300 g de carn de vedella (agulla, jarret o botifarra) </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 300 g de carn de porc (costella o punta de pit) </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 150 g d’os de pernil poc salat o 150 g d’espinada de porc</li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 150 g d’os blanc o de genoll </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 50-70 g de cansalada (opcional) </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 600-800 g de gallina o pollastre </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 150 g de cigrons secs (12 h en remull) </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 200 g de pastanagues </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 200 g de naps</li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 120 g de porro </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 1 o 2 xirivies </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 80 g d’api </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 250 g de col </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 100-120 g de pasta petita (fideus 2-3 o pasta menuda) </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> Sal </li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> 4 litres d’aigua (aprox., per a la cocció inicial) </li>
+                    </ul>
+                    <div class="ingr-image">
+                        <img src="assets/receptes/escudella/ingredients.jpg"
+                            alt="Imatge dels Ingredients del plat">
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="steps">
+                <h2>Passos a seguir:</h2>
+                <ol>
+                    <li>Poseu la vedella, el porc, els ossos, la cansalada, si n’hi afegiu, i la gallina en una olla gran. Cobriu-ho amb 4 litres d’aigua freda i feu que arrenqui el bull suau. A mesura que vagi bullint, escumeu-ho amb compte, per obtenir un brou net i clar. </li>
+                    <li>Un cop retirades les impureses, afegiu-hi els cigrons, que prèviament haureu posat en remull, preferiblement dins d’una malla, i a continuació incorporeu-hi totes les hortalisses, senceres o tallades a trossos grossos. Deixeu-ho coure lentament, mantenint un bull baix i constant, unes dues hores i mitja, i afineu-ne el punt de sal cap a la meitat del procés, per ajustar l’equilibri del brou. </li>
+                    <li>Quan la cocció estigui feta, coleu el brou i reserveu la carn, la gallina i les verdures per separat. Si voleu un resultat més lleuger, retireu part del greix superficial del brou, tot i que tradicionalment se’n conserva una mica, perquè aporta sabor i untuositat. </li>
+                    <li>Per preparar l’escudella, torneu a posar el brou net al foc i feu que arrenqui el bull. Afegiu-hi la pasta i coeu-la el temps indicat al paquet, segons el format, normalment entre quatre i vuit minuts. Quan estigui a punt, serviu el brou amb la pasta calenta en plats fondos. </li>
+                    <li>Per presentar la carn d’olla, poseu en una plata les peces de carn, la gallina trossejada o desossada, les verdures cuites i els cigrons. Serviu-la com a segon plat, i és habitual acompanyar-la amb un rajolí d’oli d’oliva o un allioli suau, segons el costum de cada casa.</li>
+                </ol>
+
+                <div class="steps-img">
+                    <p>Possibles presentacions: </p>
+                    <img src="assets/receptes/escudella/1.jpg" alt="Presentació plat individual, verdura i carn separades">
+                    <img src="assets/receptes/escudella/2.jpg" alt="Olla amb el caldo i els aliments solids separats">
+                    <img src="assets/receptes/escudella/3.jpg" alt="Plat individual">
+                    <img src="assets/receptes/escudella/4.png" alt="Samfaina acompanyant pop">
+                    <img src="assets/receptes/escudella/5.jpg" alt="Samfaina acompanyant mandonguilles">
+                </div>
+            </section>
+
+            <section class="video">
+                <h2>Video exemplar de la recepta:</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/j7Qh_-elSKo?si=P3lqeMhobx5T97Du" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="review">
+                <h2>Comentaris i valoracions:</h2>
+
+                <div class="comments-list">
+                    <!-- Comentari d'exemple -->
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <span class="comment-author">Joan Garcia</span>
+                            <div class="comment-rating">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-empty"></i>
+                            </div>
+                        </div>
+                        <p class="comment-text">He seguit la recepta aquest Nadal i ha quedat bonissima!!!</p>
+                    </div>
+                </div>
+
+                <div class="add-review">
+                    <h3>Deixa la teva opinió</h3>
+                    <form id="comment-form">
+                        <div class="user-info-grid">
+                            <div class="form-group">
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" placeholder="ex: Marta, Marc..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adreça electrònica</label>
+                                <input type="email" id="email" placeholder="ex: usuari@exemple.com" required>
+                            </div>
+                        </div>
+                        <div class="rating-select">
+                            <span>La teva valoració:</span>
+                            <div class="stars">
+                                <input type="radio" name="star" id="star5" value="5">
+                                <label for="star5" title="5 estrelles"><i data-lucide="star"></i></label>
+                                <input type="radio" name="star" id="star4" value="4">
+                                <label for="star4" title="4 estrelles"><i data-lucide="star"></i></label>
+                                <input type="radio" name="star" id="star3" value="3">
+                                <label for="star3" title="3 estrelles"><i data-lucide="star"></i></label>
+                                <input type="radio" name="star" id="star2" value="2">
+                                <label for="star2" title="2 estrelles"><i data-lucide="star"></i></label>
+                                <input type="radio" name="star" id="star1" value="1">
+                                <label for="star1" title="1 estrella"><i data-lucide="star"></i></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="new-comment">El teu comentari:</label>
+                            <textarea id="new-comment" placeholder="Explica'ns què t'ha semblat la recepta..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="button-link">Enviar comentari</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p><abbr title="Universitat Oberta de Catalunya">UOC</abbr> Abril de 2025. Claudia Trigo Joaquin</p>
+        <p>Els <a href="links.html">crèdits</a> de la informació rebuda es troben en el enllaç. </p>
+    </footer>
+
+    
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
