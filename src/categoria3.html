@@ -33,38 +33,37 @@
     </header>
 
     <main id="main-content">
-        <form action="/send-info" method="post">
+        <form id="suggestion-form" action="/send-info" method="post">
             <p>Si voleu enviar algun suggeriment de recepta, completeu els següents camps:</p>
             <fieldset>
                 <legend>Informació de contacte:</legend>
                 <div>
                     <div>
                         <label for="nom">Nom</label>
-                        <input type="text" id="nom" placeholder="ex: Marta, Marc, ...">
+                        <input type="text" id="nom" placeholder="ex: Marta, Marc, ..." required minlength="3">
                     </div>
                     <div>
-                        <label for="email">Adreça electrònica</label>
-                        <input type="email" id="email" placeholder="ex: example@example.com">
+                        <label for="email" title="El correu ha de ser vàlid (ex: usuari@exemple.com)">Adreça electrònica</label>
+                        <input type="email" id="email" placeholder="ex: example@example.com" required>
                     </div>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Descripció de la recepta:</legend>
-
                 <div>
                     <div>
                         <label for="tipus-recepta">Tripus de recepta</label>
-                        <select id="tipus-recepta" name="tipus-recepta">
+                        <select id="tipus-recepta" name="tipus-recepta" required>
+                            <option value="" disabled selected>Selecciona una opció</option>
                             <option value="recepta">Recepta</option>
                             <option value="postre">Postre</option>
-                            <option value="indefinit" selected>  </option>
                         </select>
                     </div>
                     <div>
                         <label for="descripcio">Descripció</label>
                         <textarea name="descripcio" id="descripcio"
-                            placeholder="En aquest espai, descriu breument la recepta i/o el motiu de la proposta."></textarea>
+                            placeholder="En aquest espai, descriu breument la recepta i/o el motiu de la proposta." required minlength="10"></textarea>
                     </div>
                 </div>
             </fieldset>
@@ -76,8 +75,8 @@
             </fieldset>
 
             <div class="butons-form">
-                <button type="submit">Enviar suggeriment</button>
-                <button type="reset">Netejar formulari</button>
+                <button type="submit" class="button-link">Enviar suggeriment</button>
+                <button type="reset" class="button-link">Netejar formulari</button>
             </div>
 
         </form>
@@ -87,6 +86,8 @@
         <p><abbr title="Universitat Oberta de Catalunya">UOC</abbr> Abril de 2025. Claudia Trigo Joaquin</p>
         <p>Els <a href="links.html">crèdits</a> de la informació rebuda es troben en el enllaç. </p>
     </footer>
+
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>

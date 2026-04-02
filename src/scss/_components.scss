@@ -648,14 +648,14 @@ button:hover,
 
 // Estils per a les estrelles de Lucide
 .star-filled {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: v.$color-links;
-    color: v.$color-links;
+    stroke: v.$color-links;
 }
 
 .star-empty {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     color: #ccc;
 }

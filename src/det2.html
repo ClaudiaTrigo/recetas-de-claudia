@@ -147,11 +147,11 @@
                         <div class="user-info-grid">
                             <div class="form-group">
                                 <label for="nom">Nom</label>
-                                <input type="text" id="nom" placeholder="ex: Marta, Marc..." required>
+                                <input type="text" id="nom" minlength="3" placeholder="ex: Marta, Marc..." required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Adreça electrònica</label>
-                                <input type="email" id="email" placeholder="ex: usuari@exemple.com" required>
+                                <input type="email" id="email" pattern=".+@.+\.com" title="El correu ha de ser vàlid (ex: usuari@exemple.com)" placeholder="ex: usuari@exemple.com" required>
                             </div>
                         </div>
                         <div class="rating-select">
@@ -172,7 +172,7 @@
 
                         <div class="form-group">
                             <label for="new-comment">El teu comentari:</label>
-                            <textarea id="new-comment" placeholder="Explica'ns què t'ha semblat la recepta..." required></textarea>
+                            <textarea id="new-comment" minlength="3" placeholder="Explica'ns què t'ha semblat la recepta..." required></textarea>
                         </div>
 
                         <button type="submit" class="button-link">Enviar comentari</button>
