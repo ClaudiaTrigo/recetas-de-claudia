@@ -9,5 +9,12 @@
 body {
     font-family: v.$font-secundaria;
     background-color: v.$color-fons;
-    color: #333;
+    color: v.$color-footer;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
