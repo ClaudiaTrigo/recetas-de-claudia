@@ -68,4 +68,4 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 **Claudia Trigo Joaquin** - Estudiante de la Universitat Oberta de Catalunya (UOC).
 
-Si quereis ver la web la podeis encontrar en: 
+Demo en vivo: https://receptesdelaclaudia.netlify.app/
