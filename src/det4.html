@@ -7,6 +7,7 @@
     <title>Receptes Claudia - Fideuà</title>
     <meta name="author" content="Claudia Trigo">
     <meta name="description" content="Pàgina de detall: Fideuà">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="stylesheet" href="scss/style.scss">
 </head>
 
@@ -53,7 +54,7 @@
 
                 <!-- Ús de la dependència externa Lucide -->
                 <div class="recipe-meta"
-                    style="display: flex; gap: 20px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
+                    style="display: flex; flex-direction: column; gap: 5px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
                     <span style="display: flex; align-items: center; gap: 5px;">
                         <i data-lucide="clock" style="width: 18px;"></i> 45 minuts
                     </span>
@@ -81,9 +82,12 @@
                         <li><i data-lucide="check" class="ingr-icon"></i> Oli d’oliva verge extra i sal</li>
                     </ul>
                     <div class="ingr-image">
-                        <img src="assets/receptes/fideua/ingredients.jpg"
-                            alt="Imatge dels Ingredients del plat">
-
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="assets/receptes/fideua/ingredients-small.webp" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="assets/receptes/fideua/ingredients-small.jpg" type="image/jpeg">
+                            <source srcset="assets/receptes/fideua/ingredients.webp" type="image/webp">
+                            <img src="assets/receptes/fideua/ingredients.jpg" alt="Imatge dels Ingredients del plat">
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -103,11 +107,46 @@
 
                 <div class="steps-img">
                     <p>Possibles presentacions: </p>
-                    <img src="assets/receptes/fideua/1.jpg" alt="Fideuà amb calamars i musclos">
-                    <img src="assets/receptes/fideua/2.jpg" alt="Imatge ampliada de la fidueà emplatada">
-                    <img src="assets/receptes/fideua/3.jpg" alt="Fideuà amb gambes i musclos">
-                    <img src="assets/receptes/fideua/4.jpg" alt="Fideuà amb acompanyant d'all i julivert">
-                    <img src="assets/receptes/fideua/5.jpg" alt="Fideuà amb fideus gruixuts">
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/fideua/1-small.webp 400w, assets/receptes/fideua/1.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/fideua/1.jpg"
+                            srcset="assets/receptes/fideua/1-small.jpg 400w, assets/receptes/fideua/1.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Fideuà amb calamars i musclos">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/fideua/2-small.webp 400w, assets/receptes/fideua/2.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/fideua/2.jpg"
+                            srcset="assets/receptes/fideua/2-small.jpg 400w, assets/receptes/fideua/2.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Imatge ampliada de la fidueà emplatada">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/fideua/3-small.webp 400w, assets/receptes/fideua/3.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/fideua/3.jpg"
+                            srcset="assets/receptes/fideua/3-small.jpg 400w, assets/receptes/fideua/3.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Fideuà amb gambes i musclos">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/fideua/4-small.webp 400w, assets/receptes/fideua/4.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/fideua/4.jpg"
+                            srcset="assets/receptes/fideua/4-small.jpg 400w, assets/receptes/fideua/4.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Fideuà amb acompanyant d'all i julivert">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/fideua/5-small.webp 400w, assets/receptes/fideua/5.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/fideua/5.jpg"
+                            srcset="assets/receptes/fideua/5-small.jpg 400w, assets/receptes/fideua/5.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Fideuà amb fideus gruixuts">
+                    </picture>
                 </div>
             </section>
 

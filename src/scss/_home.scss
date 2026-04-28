@@ -1,97 +1,259 @@
 @use '_variables' as v;
 
-// Fem que el body ocupi tota la pantalla i no deixi fer scroll
+// Estils base per a la portada
 body.portada {
-    height: 100vh;
+    background-color: v.$color-fons; 
+    margin: 0;
+    font-family: v.$font-secundaria;
+}
+
+// Secció Superior amb la imatge de fons
+.hero-section {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: url('../assets/fondo-home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
+    
     header {
-        padding: 2rem;
+        padding-top: 25px;
         background-color: transparent;
+        width: 100%;
 
         nav ul {
             display: flex;
             justify-content: center;
             gap: 2rem;
             list-style: none;
+            margin: 0;
+            padding: 0;
 
             a {
                 text-decoration: none;
-                color: v.$color-primari;
-                font-weight: bold;
+                color: v.$color-secundari;
+                -webkit-text-stroke: 0.02px v.$color-fons;
+                font-weight: 900;
                 text-transform: uppercase;
+                font-size: 20px;
                 letter-spacing: 1px;
                 transition: color 0.3s ease;
 
                 &:hover {
                     color: v.$color-links;
+                    -webkit-text-stroke: 0.02px v.$color-links;
                 }
             }
         }
     }
 
-    main {
+    .hero-content {
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 1rem;
+    }
+}
 
-        img {
-            max-width: 400px;
-            margin-bottom: 1rem;
-        }
+// Logo i Corona de ganivets
+.logo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
+    height: 350px;
 
-        h1 {
-            font-family: v.$font-principal;
-            font-size: 4rem;
-            color: v.$color-primari;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: v.$color-secundari;
-            background-color: rgba(v.$color-fons, 0.5);
-            border-radius: 20px;
-            padding: 0px 20px;
+    &:hover .knife {
+        opacity: 1;
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                transform: rotate(($i - 1) * 45deg) translateY(-55px) scale(1.1);
+            }
         }
     }
+}
 
-    @media (max-width: 768px) {
+.kitchen-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 
-        nav ul {
-            gap: 20px;
+    .knife {
+        transform-origin: center;
+        transition: all 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        opacity: 0;
+        
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                transform: rotate(($i - 1) * 45deg) translateY(0);
+            }
+        }
+        
+        path {
+            fill: none;
+            stroke: v.$color-primari;
+            stroke-width: 2;
+        }
+    }
+}
+
+.logo-img {
+    max-width: 400px; 
+    height: auto;
+    z-index: 1;
+}
+
+h1 {
+    font-family: v.$font-principal;
+    font-size: 50px;
+    color: v.$color-primari;
+    margin: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: v.$color-secundari;
+    -webkit-text-stroke: 0.3px v.$color-fons; 
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+// Secció de fotos destacades
+section#plats-destacats {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    h2 {
+        margin-bottom: 3rem;
+        text-align: center;
+        text-decoration: underline dotted v.$color-secundari; 
+        text-underline-offset: 5px;
+    }
+
+
+    .featured-grid {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 1200px;
+
+        .featured-item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            text-decoration: none;
+
+            span {
+                margin-top: 1rem;
+                font-family: v.$font-principal;
+                color: v.$color-primari;
+                font-size: 1.5rem;
+                padding: 5px 15px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.house-clip {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.8s ease;
+    clip-path: polygon(50% 0%, 100% 40%, 85% 40%, 85% 100%, 15% 100%, 15% 40%, 0% 40%);
+
+    &:hover {
+        transform: scale(1.05);
+        clip-path: polygon(50% 0%, 100% 30%, 80% 30%, 80% 100%, 20% 100%, 20% 30%, 0% 30%);
+    }
+}
+
+@media (max-width: 1024px) {
+    section#plats-destacats .featured-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 3rem;
+
+        header nav ul {
+            gap: 1rem;
+            a { font-size: 14px; }
         }
 
-        main {
-            padding: 40px;
+        .hero-content {
+            padding-top: 2rem;
+            justify-content: flex-start;
+        }
+    }
 
-            img {
-                width: 100px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1rem;
-                ;
+    .logo-wrapper {
+        width: 250px;
+        height: 250px;
+        
+        &:hover .knife {
+            @for $i from 1 through 8 {
+                &:nth-child(#{$i}) {
+                    transform: rotate(($i - 1) * 45deg) translateY(-40px) scale(1.05);
+                }
             }
         }
     }
 
+    .logo-img {
+        max-width: 250px;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    main#main-content {
+
+        .featured-grid {
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+        }
+    }
+
+    .house-clip {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .logo-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .logo-img {
+        max-width: 180px;
+    }
 }

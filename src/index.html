@@ -1,43 +1,116 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receptes Claudia</title>
     <meta name="author" content="Claudia Trigo">
     <meta name="description" content="Pàgina d'Index de la Web de Receptes de la Claudia Trigo">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="stylesheet" href="scss/style.scss">
 </head>
+
 <body class="portada">
     <a href="#main-content" class="skip-link">Saltar al contingut principal</a>
-
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="categoria.html">Receptes</a>
-                </li>
-                <li>
-                    <a href="categoria2.html">Postres</a>
-                </li>
-                <li>
-                    <a href="categoria3.html">Formulari de propostes</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main id="main-content">
-        <picture>
-            <source srcset="assets/logo-verde.webp" type="image/webp">
-            <img src="assets/logo-verde.png" alt="Imatge del logo de la pàgina web" class="clip-animation">
-        </picture>
-        <h1>Receptari d'una cuina moderna</h1>  
-        <h2>El món a través de la nostre cuina</h2>
+        <!-- Secció superior que ocupa 100vh -->
+        <div class="hero-section">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="categoria.html">Receptes</a>
+                        </li>
+                        <li>
+                            <a href="categoria2.html">Postres</a>
+                        </li>
+                        <li>
+                            <a href="categoria3.html">Formulari de propostes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero-content">
+                <div class="logo-wrapper">
+                    <!-- SVG de la corona de ganivets -->
+                    <svg class="kitchen-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <g class="knife-corona">
+                            <!-- 8 ganivets distribuïts circularment -->
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                            <g class="knife">
+                                <path d="M100 80 L103 40 L97 40 Z M100 80 L100 90" />
+                            </g>
+                        </g>
+                    </svg>
+
+                    <picture>
+                        <source srcset="assets/logo-verde.webp" type="image/webp" class="logo-img">
+                        <img src="assets/logo-verde.png" alt="Imatge del logo de la pàgina web" class="logo-img">
+                    </picture>
+                </div>
+
+                <h1>Receptari d'una cuina moderna</h1>
+                <h2>El món a través de la nostre cuina</h2>
+            </div>
+        </div>
+
+        <!-- Contingut clippath -->
+        <section id="plats-destacats">
+            <h2>Plats destacats</h2>
+            <div class="featured-grid">
+                <div class="featured-item salat">
+                    <a href="det5.html">
+                        <picture>
+                            <source srcset="assets/receptes/escudella/escudella-small.webp 500w, assets/receptes/escudella/escudella.webp 1000w" type="image/webp" sizes="(max-width: 768px) 200px, 250px">
+                            <img src="assets/receptes/escudella/escudella.jpg" 
+                                srcset="assets/receptes/escudella/escudella-small.jpg 500w, assets/receptes/escudella/escudella.jpg 1000w"
+                                sizes="(max-width: 768px) 200px, 250px"
+                                alt="Escudella de Nadal presentada en plat tradicional" class="house-clip">
+                        </picture>
+                    </a>
+                    <span>Tradició</span>
+                </div>
+                <div class="featured-item dolc">
+                    <a href="det6.html">
+                        <picture>
+                            <source srcset="assets/postres/crema_catalana/crema-catalana-small.webp 500w, assets/postres/crema_catalana/crema-catalana.webp 1000w" type="image/webp" sizes="(max-width: 768px) 200px, 250px">
+                            <img src="assets/postres/crema_catalana/crema-catalana.jpg" 
+                                srcset="assets/postres/crema_catalana/crema-catalana-small.jpg 500w, assets/postres/crema_catalana/crema-catalana.jpg 1000w"
+                                sizes="(max-width: 768px) 200px, 250px"
+                                alt="Crema Catalana amb sucre cremat per sobre" class="house-clip">
+                        </picture>
+                    </a>
+                    <span>Dolçor</span>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p><abbr title="Universitat Oberta de Catalunya">UOC</abbr> Abril de 2025. Claudia Trigo Joaquin</p>
         <p>Els <a href="links.html">crèdits</a> de la informació rebuda es troben en el enllaç. </p>
     </footer>
 </body>
-</html>
 
+</html>

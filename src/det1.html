@@ -7,6 +7,7 @@
     <title>Receptes Claudia - Trinxat de la Cerdanya</title>
     <meta name="author" content="Claudia Trigo">
     <meta name="description" content="Pàgina de detall: Trinxat de la Cerdanya">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="stylesheet" href="scss/style.scss">
 </head>
 
@@ -53,7 +54,7 @@
 
                 <!-- Ús de la dependència externa Lucide -->
                 <div class="recipe-meta"
-                    style="display: flex; gap: 20px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
+                    style="display: flex; flex-direction: column; gap: 5px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
                     <span style="display: flex; align-items: center; gap: 5px;">
                         <i data-lucide="clock" style="width: 18px;"></i> 60 minuts
                     </span>
@@ -76,12 +77,15 @@
                         <li><i data-lucide="check" class="ingr-icon"></i> 2-3 grans d'all</li>
                         <li><i data-lucide="check" class="ingr-icon"></i> 1 bitxo si t'agrada el picant</li>
                         <li><i data-lucide="check" class="ingr-icon"></i> 1 got de vi ranci</li>
-                        <li><i data-lucide="check" class="ingr-icon"></i> Sal i pebre al gust</li>
+                        <li><i data-lucide="check" class="ingr-icon"></i> Sal i pebre al guix</li>
                     </ul>
                     <div class="ingr-image">
-                        <img src="assets/receptes/trinxat_de_la_cerdanya/ingredientes-del-trinxat-de-cerdanya.jpg"
-                            alt="Imatge dels Ingredients del plat">
-
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="assets/receptes/trinxat_de_la_cerdanya/ingredientes-small.webp" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="assets/receptes/trinxat_de_la_cerdanya/ingredientes-small.jpg" type="image/jpeg">
+                            <source srcset="assets/receptes/trinxat_de_la_cerdanya/ingredientes-del-trinxat-de-cerdanya.webp" type="image/webp">
+                            <img src="assets/receptes/trinxat_de_la_cerdanya/ingredientes-del-trinxat-de-cerdanya.jpg" alt="Imatge dels Ingredients del plat">
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -113,11 +117,41 @@
 
                 <div class="steps-img">
                     <p>Possibles presentacions: </p>
-                    <img src="assets/receptes/trinxat_de_la_cerdanya/1.jpg" alt="Trinxat servit ambn la butifarra i els alls per sobre">
-                    <img src="assets/receptes/trinxat_de_la_cerdanya/2.jpg" alt="Presentació individual del trinxat amb talls de cansalada per sobre">
-                    <img src="assets/receptes/trinxat_de_la_cerdanya/3.jpg" alt="Plat de trinxat servit amb la cansalada tallada a trossos grans">
-                    <img src="assets/receptes/trinxat_de_la_cerdanya/foto4.jpg" alt="Trinxat presentat en forma de purè">
-                    <img src="assets/receptes/trinxat_de_la_cerdanya/5.jpg" alt="Trinxat acabat de fer amb la botifarra negra marcada a la planxa">
+                    <picture>
+                        <source srcset="assets/receptes/trinxat_de_la_cerdanya/1-small.webp 400w, assets/receptes/trinxat_de_la_cerdanya/1.webp 800w" type="image/webp" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/trinxat_de_la_cerdanya/1.jpg" 
+                                srcset="assets/receptes/trinxat_de_la_cerdanya/1-small.jpg 400w, assets/receptes/trinxat_de_la_cerdanya/1.jpg 800w" 
+                                sizes="(max-width: 600px) 400px, 800px"
+                                alt="Trinxat servit ambn la butifarra i els alls per sobre">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/receptes/trinxat_de_la_cerdanya/2-small.webp 400w, assets/receptes/trinxat_de_la_cerdanya/2.webp 800w" type="image/webp" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/trinxat_de_la_cerdanya/2.jpg" 
+                                srcset="assets/receptes/trinxat_de_la_cerdanya/2-small.jpg 400w, assets/receptes/trinxat_de_la_cerdanya/2.jpg 800w" 
+                                sizes="(max-width: 600px) 400px, 800px"
+                                alt="Presentació individual del trinxat amb talls de cansalada per sobre">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/receptes/trinxat_de_la_cerdanya/3-small.webp 400w, assets/receptes/trinxat_de_la_cerdanya/3.webp 800w" type="image/webp" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/trinxat_de_la_cerdanya/3.jpg" 
+                                srcset="assets/receptes/trinxat_de_la_cerdanya/3-small.jpg 400w, assets/receptes/trinxat_de_la_cerdanya/3.jpg 800w" 
+                                sizes="(max-width: 600px) 400px, 800px"
+                                alt="Plat de trinxat servit amb la cansalada tallada a trossos grans">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/receptes/trinxat_de_la_cerdanya/foto4-small.webp 400w, assets/receptes/trinxat_de_la_cerdanya/foto4.webp 800w" type="image/webp" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/trinxat_de_la_cerdanya/foto4.jpg" 
+                                srcset="assets/receptes/trinxat_de_la_cerdanya/foto4-small.jpg 400w, assets/receptes/trinxat_de_la_cerdanya/foto4.jpg 800w" 
+                                sizes="(max-width: 600px) 400px, 800px"
+                                alt="Trinxat presentat en forma de purè">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/receptes/trinxat_de_la_cerdanya/5-small.webp 400w, assets/receptes/trinxat_de_la_cerdanya/5.webp 800w" type="image/webp" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/trinxat_de_la_cerdanya/5.jpg" 
+                                srcset="assets/receptes/trinxat_de_la_cerdanya/5-small.jpg 400w, assets/receptes/trinxat_de_la_cerdanya/5.jpg 800w" 
+                                sizes="(max-width: 600px) 400px, 800px"
+                                alt="Trinxat acabat de fer amb la botifarra negra marcada a la planxa">
+                    </picture>
                 </div>
             </section>
 
@@ -171,11 +205,11 @@
                                 <label for="star5" title="5 estrelles"><i data-lucide="star"></i></label>
                                 <input type="radio" name="star" id="star4" value="4">
                                 <label for="star4" title="4 estrelles"><i data-lucide="star"></i></label>
-                                <input type="radio" name="star" id="star3" value="3">
+                                <input type="radio" name="star" id="star3" value="4">
                                 <label for="star3" title="3 estrelles"><i data-lucide="star"></i></label>
-                                <input type="radio" name="star" id="star2" value="2">
+                                <input type="radio" name="star" id="star2" value="4">
                                 <label for="star2" title="2 estrelles"><i data-lucide="star"></i></label>
-                                <input type="radio" name="star" id="star1" value="1">
+                                <input type="radio" name="star" id="star1" value="4">
                                 <label for="star1" title="1 estrella"><i data-lucide="star"></i></label>
                             </div>
                         </div>

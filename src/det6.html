@@ -7,6 +7,7 @@
     <title>Postres Claudia - Crema Catalana</title>
     <meta name="author" content="Claudia Trigo">
     <meta name="description" content="Pàgina de detall: Crema Catalana">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="stylesheet" href="scss/style.scss">
 </head>
 
@@ -53,7 +54,7 @@
 
                 <!-- Ús de la dependència externa Lucide -->
                 <div class="recipe-meta"
-                    style="display: flex; gap: 20px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
+                    style="display: flex; flex-direction: column; gap: 5px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
                     <span style="display: flex; align-items: center; gap: 5px;">
                         <i data-lucide="clock" style="width: 18px;"></i> Indefinit
                     </span>
@@ -76,9 +77,12 @@
                         <li><i data-lucide="check" class="ingr-icon"></i> 20 g de midó de blat de moro</li>
                     </ul>
                     <div class="ingr-image">
-                        <img src="assets/postres/crema_catalana/ingredients.jpg"
-                            alt="Imatge dels Ingredients del plat">
-
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="assets/postres/crema_catalana/ingredients-small.webp" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="assets/postres/crema_catalana/ingredients-small.jpg" type="image/jpeg">
+                            <source srcset="assets/postres/crema_catalana/ingredients.webp" type="image/webp">
+                            <img src="assets/postres/crema_catalana/ingredients.jpg" alt="Imatge dels Ingredients del plat">
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -98,11 +102,22 @@
 
                 <div class="steps-img">
                     <p>Possibles presentacions: </p>
-                    <img src="assets/postres/crema_catalana/1.jpg" alt="Presentacio tradicional de la crema catalana en cassoletes de fang">
-                    <img src="assets/postres/crema_catalana/2.jpg" alt="Presentacio amb plats no tradicionals en cassoletes de ceràmica">
-                    <img src="assets/postres/crema_catalana/3.jpg" alt="Crema catalana amb sucre bastant cremat">
-                    <img src="assets/postres/crema_catalana/4.jpg" alt="Crema catalana amb sucre abans de ser cremat">
-                    
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/crema_catalana/1-small.webp 400w, assets/postres/crema_catalana/1.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/crema_catalana/1.jpg" srcset="assets/postres/crema_catalana/1-small.jpg 400w, assets/postres/crema_catalana/1.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Presentacio tradicional de la crema catalana en cassoletes de fang">
+                    </picture>
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/crema_catalana/2-small.webp 400w, assets/postres/crema_catalana/2.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/crema_catalana/2.jpg" srcset="assets/postres/crema_catalana/2-small.jpg 400w, assets/postres/crema_catalana/2.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Presentacio amb plats no tradicionals en cassoletes de ceràmica">
+                    </picture>
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/crema_catalana/3-small.webp 400w, assets/postres/crema_catalana/3.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/crema_catalana/3.jpg" srcset="assets/postres/crema_catalana/3-small.jpg 400w, assets/postres/crema_catalana/3.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Crema catalana amb sucre bastant cremat">
+                    </picture>
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/crema_catalana/4-small.webp 400w, assets/postres/crema_catalana/4.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/crema_catalana/4.jpg" srcset="assets/postres/crema_catalana/4-small.jpg 400w, assets/postres/crema_catalana/4.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Crema catalana amb sucre abans de ser cremat">
+                    </picture>
                 </div>
             </section>
 

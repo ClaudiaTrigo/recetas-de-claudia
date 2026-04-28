@@ -7,6 +7,7 @@
     <title>Postres Claudia - Mel i mató</title>
     <meta name="author" content="Claudia Trigo">
     <meta name="description" content="Pàgina de detall: Mel i Mató">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="stylesheet" href="scss/style.scss">
 </head>
 
@@ -53,9 +54,9 @@
 
                 <!-- Ús de la dependència externa Lucide -->
                 <div class="recipe-meta"
-                    style="display: flex; gap: 20px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
+                    style="display: flex; flex-direction: column; gap: 5px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
                     <span style="display: flex; align-items: center; gap: 5px;">
-                        <i data-lucide="clock" style="width: 18px;"></i> 15 min preparació - 4 h repòs a la nevera (minim)
+                        <i data-lucide="clock" style="width: 18px;"></i> 15 min prep.- 4 h a la nevera
                     </span>
                     <span style="display: flex; align-items: center; gap: 5px;">
                         <i data-lucide="users" style="width: 18px;"></i> 4 persones
@@ -78,9 +79,12 @@
                         <li><i data-lucide="check" class="ingr-icon"></i> (Opcional) Meduixes</li>
                     </ul>
                     <div class="ingr-image">
-                        <img src="assets/postres/mel-mato/ingredients.jpg"
-                            alt="Imatge dels Ingredients del plat">
-
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="assets/postres/mel-mato/ingredients-small.webp" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="assets/postres/mel-mato/ingredients-small.jpg" type="image/jpeg">
+                            <source srcset="assets/postres/mel-mato/ingredients.webp" type="image/webp">
+                            <img src="assets/postres/mel-mato/ingredients.jpg" alt="Imatge dels Ingredients del plat">
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -89,7 +93,7 @@
                 <h2>Passos a seguir:</h2>
                 <ol>
                     <li>En un cassó, escalfa la llet sencera amb el pessic de sal (si la fas servir) a foc mitjà-alt. Remena de tant en tant per evitar que s’enganxi al fons. Just abans que comenci a bullir (quan vegis petites bombolles a les vores i vapor, aproximadament a 70-80 ºC), retira el cassó del foc.</li>
-                    <li>Immediatament, afegeix el suc de llimona a la llet calenta. Remena suaument durant uns segons perquè es barregi bé. Tapa el cassó i deixa’l reposar a temperatura ambient durant uns 30 minuts, sense moure’l. Durant aquest temps, la llet es tallarà, separant-se la part sòlida (el futur mató) del sèrum líquid i groguenc.</li>
+                    <li>Immediatament, afegeix el suc de llimona a la llet calenta. Remena suaument durant uns segons perquè es barregi bé. Tapa el cassó i deixa’l reposar a temperatura ambient durant uns 30 minuts, sansa moure’l. Durant aquest temps, la llet es tallarà, separant-se la part sòlida (el futur mató) del sèrum líquid i groguenc.</li>
                     <li>Prepara un bol gran. Col·loca a sobre el colador fi i folra’l amb el drap de cotó net o la gassa de formatgeria, assegurant-te que el drap cobreixi bé el colador i en sobri una mica per les vores.</li>
                     <li>Amb cura, aboca la llet tallada sobre el drap. El sèrum començarà a filtrar-se cap al bol i la part sòlida, el mató, quedarà retinguda al drap.</li>
                     <li>Pots lligar les puntes del drap formant un farcellet i penjar-lo sobre el bol (per exemple, lligat a una cullera de fusta travessada sobre el bol) o simplement deixar-lo al colador. Deixa que el mató s’escorri a la nevera durant un mínim de 4 hores, o idealment tota la nit. Com més temps s’escorri, més consistent quedarà.</li>
@@ -100,12 +104,26 @@
 
                 <div class="steps-img">
                     <p>Possibles presentacions: </p>
-                    <img src="assets/postres/mel-mato/1.jpg" alt="Mel i mató simple">
-                    <img src="assets/postres/mel-mato/2.jpg" alt="Mel i mató amb nous">
-                    <img src="assets/postres/mel-mato/3.jpg" alt="Mató tallat en forma de pastís amb mel">
-                    <img src="assets/postres/mel-mato/4.jpg" alt="Mel i mató amb nous">
-                    <img src="assets/postres/mel-mato/5.jpeg" alt="Canelons de mel i mató, una altre forma de presentar-ho">
-                    
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/mel-mato/1-small.webp 400w, assets/postres/mel-mato/1.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/mel-mato/1.jpg" srcset="assets/postres/mel-mato/1-small.jpg 400w, assets/postres/mel-mato/1.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Mel i mató simple">
+                    </picture>
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/mel-mato/2-small.webp 400w, assets/postres/mel-mato/2.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/mel-mato/2.jpg" srcset="assets/postres/mel-mato/2-small.jpg 400w, assets/postres/mel-mato/2.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Mel i mató amb nous">
+                    </picture>
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/mel-mato/3-small.webp 400w, assets/postres/mel-mato/3.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/mel-mato/3.jpg" srcset="assets/postres/mel-mato/3-small.jpg 400w, assets/postres/mel-mato/3.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Mató tallat en forma de pastís amb mel">
+                    </picture>
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/mel-mato/4-small.webp 400w, assets/postres/mel-mato/4.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/mel-mato/4.jpg" srcset="assets/postres/mel-mato/4-small.jpg 400w, assets/postres/mel-mato/4.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Mel i mató amb nous">
+                    </picture>
+                    <picture>
+                            <source type="image/webp" srcset="assets/postres/mel-mato/5-small.webp 400w, assets/postres/mel-mato/5.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/postres/mel-mato/5.jpeg" srcset="assets/postres/mel-mato/5-small.jpeg 400w, assets/postres/mel-mato/5.jpeg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Canelons de mel i mató, una altre forma de presentar-ho">
+                    </picture>
                 </div>
             </section>
 

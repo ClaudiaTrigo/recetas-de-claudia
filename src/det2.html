@@ -7,6 +7,7 @@
     <title>Receptes Claudia - Samfaina</title>
     <meta name="author" content="Claudia Trigo">
     <meta name="description" content="Pàgina de detall: Samfaina">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="stylesheet" href="scss/style.scss">
 </head>
 
@@ -53,7 +54,7 @@
 
                 <!-- Ús de la dependència externa Lucide -->
                 <div class="recipe-meta"
-                    style="display: flex; gap: 20px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
+                    style="display: flex; flex-direction: column; gap: 5px; color: var(--color-primari); font-weight: bold; margin-top: 10px;">
                     <span style="display: flex; align-items: center; gap: 5px;">
                         <i data-lucide="clock" style="width: 18px;"></i> 45 minuts
                     </span>
@@ -81,9 +82,12 @@
                         <li><i data-lucide="check" class="ingr-icon"></i> Julivert trinxat (opcinal)</li>
                     </ul>
                     <div class="ingr-image">
-                        <img src="assets/receptes/samfaina/ingredientes-samfaina.jpg"
-                            alt="Imatge dels Ingredients del plat">
-
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="assets/receptes/samfaina/ingredientes-samfaina-small.webp" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="assets/receptes/samfaina/ingredientes-samfaina-small.jpg" type="image/jpeg">
+                            <source srcset="assets/receptes/samfaina/ingredientes-samfaina.webp" type="image/webp">
+                            <img src="assets/receptes/samfaina/ingredientes-samfaina.jpg" alt="Imatge dels Ingredients del plat">
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -109,11 +113,47 @@
 
                 <div class="steps-img">
                     <p>Possibles presentacions: </p>
-                    <img src="assets/receptes/samfaina/1.jpg" alt="Presentació individual d'una cassola amb samfaina">
-                    <img src="assets/receptes/samfaina/2.jpg" alt="Presentació individual d'un plat de samfaina">
-                    <img src="assets/receptes/samfaina/3.jpg" alt="Samfaina acompanyant bacallà">
-                    <img src="assets/receptes/samfaina/4.jpeg" alt="Samfaina acompanyant pop">
-                    <img src="assets/receptes/samfaina/5.jpg" alt="Samfaina acompanyant mandonguilles">
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/samfaina/1-small.webp 400w, assets/receptes/samfaina/1.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/samfaina/1.jpg"
+                            srcset="assets/receptes/samfaina/1-small.jpg 400w, assets/receptes/samfaina/1.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px"
+                            alt="Presentació individual d'una cassola amb samfaina">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/samfaina/2-small.webp 400w, assets/receptes/samfaina/2.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/samfaina/2.jpg"
+                            srcset="assets/receptes/samfaina/2-small.jpg 400w, assets/receptes/samfaina/2.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Presentació individual d'un plat de samfaina">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/samfaina/3-small.webp 400w, assets/receptes/samfaina/3.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/samfaina/3.jpg"
+                            srcset="assets/receptes/samfaina/3-small.jpg 400w, assets/receptes/samfaina/3.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Samfaina acompanyant bacallà">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/samfaina/4-small.webp 400w, assets/receptes/samfaina/4.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/samfaina/4.jpeg"
+                            srcset="assets/receptes/samfaina/4-small.jpeg 400w, assets/receptes/samfaina/4.jpeg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Samfaina acompanyant pop">
+                    </picture>
+                    <picture>
+                            <source type="image/webp"
+                            srcset="assets/receptes/samfaina/5-small.webp 400w, assets/receptes/samfaina/5.webp 800w"
+                            sizes="(max-width: 600px) 400px, 800px">
+                        <img src="assets/receptes/samfaina/5.jpg"
+                            srcset="assets/receptes/samfaina/5-small.jpg 400w, assets/receptes/samfaina/5.jpg 800w"
+                            sizes="(max-width: 600px) 400px, 800px" alt="Samfaina acompanyant mandonguilles">
+                    </picture>
                 </div>
             </section>
 
