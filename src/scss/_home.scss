@@ -28,12 +28,15 @@ body.portada {
             gap: 2rem;
             list-style: none;
             margin: 0;
-            padding: 0;
+            background-color: rgba(v.$color-fons, 0.7);
+            width: auto;
+            padding: 0 10px;
+            border-radius: 8px;
 
             a {
                 text-decoration: none;
                 color: v.$color-secundari;
-                -webkit-text-stroke: 0.02px v.$color-fons;
+                
                 font-weight: 900;
                 text-transform: uppercase;
                 font-size: 20px;
